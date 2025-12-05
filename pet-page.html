@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Milo — Pet Profile | Happy Paws</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link sr-only-focusable" href="#main">Skip to main content</a>
+
+  <header role="banner" class="bg-light border-bottom">
+    <nav class="navbar navbar-expand-lg container" role="navigation" aria-label="Main navigation">
+      <a class="navbar-brand" href="index.html">Happy Paws</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav3" aria-controls="nav3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav3">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="pet-profiles.html">Adopt</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Get Involved</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="container my-5" role="main">
+    <!-- Pet hero -->
+    <section class="row g-4 align-items-start">
+      <div class="col-lg-6">
+        <picture>
+          <source media="(min-width:1200px)" srcset="images/pet1-large.jpg">
+          <img src="images/pet1-small.jpg" alt="Milo the terrier smiling" class="img-fluid rounded shadow-sm">
+        </picture>
+      </div>
+
+      <aside class="col-lg-6">
+        <h1 class="h3">Milo</h1>
+        <p class="text-muted mb-1">Terrier Mix • 2 years • Medium • Toronto</p>
+        <p class="mb-3"><strong>Adoptability:</strong> Available</p>
+
+        <div class="mb-3">
+          <a href="#" class="btn btn-outline-primary me-2">Meet Me</a>
+          <a href="#" class="btn btn-primary">Adopt Me</a>
+        </div>
+
+        <dl class="row small">
+          <dt class="col-4">Gender</dt><dd class="col-8">Male</dd>
+          <dt class="col-4">Vaccinated</dt><dd class="col-8">Yes</dd>
+          <dt class="col-4">Spayed/Neutered</dt><dd class="col-8">Yes</dd>
+          <dt class="col-4">Good with kids</dt><dd class="col-8">Yes</dd>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- Description -->
+    <section class="mt-4" aria-labelledby="desc-title">
+      <h2 id="desc-title" class="h5">Personality & Health</h2>
+      <p>Milo is a playful terrier mix who loves fetch, short hikes, and belly rubs. He responds well to basic commands and would thrive in an active home. Milo is fully vaccinated, neutered, and recently completed a basic obedience class.</p>
+    </section>
+
+    <!-- Adoption details -->
+    <section class="mt-4" aria-labelledby="adopt-title">
+      <h2 id="adopt-title" class="h5">Adoption Details</h2>
+      <p class="small text-muted">To adopt Milo, please complete our adoption form and schedule a meet-and-greet. Adoption fees help cover care and medical needs for our animals.</p>
+
+      <div class="mt-3">
+        <a href="#" class="btn btn-primary">Start Adoption Application</a>
+        <a href="#" class="btn btn-outline-secondary">Contact Shelter</a>
+      </div>
+    </section>
+
+    <!-- Related pets -->
+    <section class="mt-5" aria-labelledby="related-title">
+      <h2 id="related-title" class="h5 mb-3">Other pets you might like</h2>
+
+      <div class="row g-3">
+        <article class="col-6 col-md-3">
+          <div class="card">
+            <img src="images/pet4-small.jpg" class="card-img-top" alt="Pet example 4">
+            <div class="card-body">
+              <h3 class="h6 mb-0">Rex</h3>
+              <p class="small text-muted mb-0">Adult • Dog</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 col-md-3">
+          <div class="card">
+            <img src="images/pet5-small.jpg" class="card-img-top" alt="Pet example 5">
+            <div class="card-body">
+              <h3 class="h6 mb-0">Maya</h3>
+              <p class="small text-muted mb-0">2 yrs • Cat</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 col-md-3">
+          <div class="card">
+            <img src="images/pet6-small.jpg" class="card-img-top" alt="Pet example 6">
+            <div class="card-body">
+              <h3 class="h6 mb-0">Theo</h3>
+              <p class="small text-muted mb-0">Puppy • Dog</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-6 col-md-3">
+          <div class="card">
+            <img src="images/pet7-small.jpg" class="card-img-top" alt="Pet example 7">
+            <div class="card-body">
+              <h3 class="h6 mb-0">Coco</h3>
+              <p class="small text-muted mb-0">Adult • Rabbit</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light border-top mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-1">© <span id="year3"></span> Happy Paws Animal Shelter</p>
+          <p class="small">We are a registered non-profit committed to pet welfare and adoption.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a class="me-3" href="#" aria-label="Instagram">IG</a>
+          <a class="me-3" href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('year3').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
