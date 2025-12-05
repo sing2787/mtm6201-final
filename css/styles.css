@@ -1,0 +1,119 @@
+:root{
+  /* Primary brand colours (uses the requested EAB280 peach) */
+  --brand: #EAB280;
+  --brand-dark: #c88c61;
+  --muted: #6b6b6b;
+  --bg-soft: #fff9f6;
+  --card-bg: #ffffff;
+  --radius: 10px;
+
+  /* Typography */
+  --font-head: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Apply fonts */
+body{
+  font-family: var(--font-body);
+  color: #222;
+  background-color: #fff;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Brand title styling */
+.brand-title{
+  font-weight:700;
+  font-family: var(--font-head);
+  color: #333;
+}
+
+/* Buttons - override bootstrap primary */
+.btn-primary{
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  transition: background-color .12s ease, transform .08s ease;
+  border-radius: 8px;
+}
+.btn-primary:hover,
+.btn-primary:focus{
+  background-color: var(--brand-dark);
+  box-shadow: 0 6px 18px rgba(234,178,128,0.12);
+}
+
+/* Outline primary */
+.btn-outline-primary{
+  color: var(--brand);
+  border-color: var(--brand);
+}
+.btn-outline-primary:hover{
+  background-color: var(--brand);
+  color: #fff;
+}
+
+/* Hero */
+.hero h1{
+  font-family: var(--font-head);
+  color: #333;
+  font-weight:700;
+}
+
+/* Cards */
+.card{
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+/* Icon placeholder */
+.icon-placeholder{
+  font-size: 28px;
+}
+
+/* Skip link visible on focus */
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus,
+.skip-link:active,
+.sr-only-focusable:focus{
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #111;
+  color: #fff;
+  z-index:1000;
+  border-radius: 6px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px){
+  .hero { text-align: center; }
+  .hero .btn { width: 100%; }
+  .hero .btn + .btn { margin-top: .5rem; }
+}
+
+/* Accessibility: focus states for links */
+a:focus, button:focus, input:focus {
+  outline: 3px solid rgba(234,178,128,0.35);
+  outline-offset: 2px;
+}
+
+/* Small helper */
+.text-muted { color: var(--muted) !important; }
+
+/* Utility for visually-hidden (Bootstrap has .visually-hidden but ensure compatibility) */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
